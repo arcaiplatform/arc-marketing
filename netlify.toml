@@ -1,0 +1,11 @@
+# netlify.toml
+# Clean URLs: /activation works without .html extension
+# Pretty URLs enabled by default with this config
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/activation"
+  to = "/activation.html"
+  status = 200
